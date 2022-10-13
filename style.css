@@ -84,10 +84,26 @@ margin-top: 30px;
 .form-control input:focus, 
 .form-control input:valid {
   outline: 0;
+  border-bottom-color:lightblue;
 }
 
 .form-control label {
   position: absolute;
   top: 15px;
   left: 0;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  /* cubic bezier defines a curve takes in four points p0 p1 p2 p3  */
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: lightblue;
+  /* move up */
+  transform: translateY(-30px);
 }
