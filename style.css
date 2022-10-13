@@ -17,6 +17,7 @@ body {
   margin: 0;
 }
 
+/* Container styles ----------------------- */
 
 .container {
   background-color: rgba(0,0,0,0.4);
@@ -32,4 +33,61 @@ body {
 .container a {
   text-decoration: none;
   color: lightblue;
+}
+
+
+/* Button styles -------------------- */
+.btn {
+cursor: pointer;
+display: inline-block;
+width: 100%;
+background-color: lightblue;
+padding: 15px;
+font-family: inherit;
+font-size: 16px;
+border: 0;
+border-radius: 5px;
+}
+
+btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(0.98)
+}
+
+.text {
+margin-top: 30px;
+}
+
+/* Form styles------------------------------- */
+.form-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display:block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+
+/* get rid of border on focus and valid */
+.form-control input:focus, 
+.form-control input:valid {
+  outline: 0;
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
 }
